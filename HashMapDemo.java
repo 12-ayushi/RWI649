@@ -24,6 +24,10 @@ It is non synchronized ds
   */
 public class HashMapDemo {
     public static void main(String[] args) {
-        Map m=new HashMap();
+        Map m<Integer,String>=new HashMap<>();
+        m.put(1,"Iuc");
+        m.put(2,"Manc");
+        m.put(3,"Tanu");
+        System.out.println(m);
     }
 }
