@@ -1,0 +1,54 @@
+Access Modifier :
+There are 4 access modifier in java
+public : it is accessible everywhere like within package and other the package
+private : ith is accessible only within the class otside we can not access
+protected : protected modifier is within the package and outside the package through child class 
+default : it is accessible within the package but not other package
+
+Main method :
+main() is the first method who calls first by jvm after that other part is executed . So we can say that it is the entry point of the program it is static method so we dont need to create instatnce to call this method jvm internally call main() with the help of class.
+
+Final Keyword :
+final variable : if we declare final variable  once we initialize so we can not change the value 
+EX :
+final int a=10;
+a=20; // error
+
+final method : if we create final method so we can not override this method 
+
+final class : if we declare final class then we can not inherit this class
+
+Static Keyword :  It is used for memory management
+
+static is a class level variable we can use static keyword with variable, class, mthods and blocks
+
+static variable : it is used to refer common property it take the memory at once when the class loading
+
+static method :
+
+A static method belongs to the class rather than the object of a class.
+A static method can be invoked without the need for creating an instance of a class.
+A static method can access static data member and can change the value of it.
+
+
+static block :
+
+Is used to initialize the static data member.
+It is executed before the main method at the time of classloading.
+
+static class : we can use static class in nested class like inside the class we can create a static class
+
+
+Example of static block :
+
+class Test{
+	static {
+		System.out.println("Static block ");
+	       }
+	public static void main(String[] args){
+		System.out.println("Main method execute");
+		}
+}
+
+in this program firstly static block execute after the main method execute because at the time of class loading if there is any static variable , method and bloacks then it get execute first.
+
