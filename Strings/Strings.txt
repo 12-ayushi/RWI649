@@ -1,0 +1,63 @@
+Strings:
+
+String is an object that represent the sequance of characters or array of characters
+String is final class in java. String is immutable it means we can not modify the strings.
+
+We can create string by two ways:
+
+1. String literals :
+
+	String str="Ayushi";// this takes memory in SCP
+	String str2="Ayush";// it does not create reference or instance simply it refer to the "str" in SCP
+
+2. By new Keyword:
+
+	String str1=new String("Ayushi");// it will takes two memory area Heap and SCP
+
+
+// Syntax of String Class
+
+final class String implements Serializable, Comparable, CharSequence
+{
+	/// methods
+}
+
+// methods of String Class
+
+charAt(int index) == it returns the character of any index
+length()= to find the length of string
+substring()= find the substring 0 to n-1 or 3 to 6(6-1)
+contains()
+indexOf()
+equals()
+join()
+isEmpty()
+concat()
+replace()
+split()
+trim()
+valueOf()
+toUpperCase()
+compareTo()
+toLowerCase()
+
+// diiff btw equals() and ==
+
+equals() is used to check contemts of string
+== check the refernce of strings
+
+StringBuffer and StringBuilder :
+
+Both classes is used to create Mutable objects of string
+StringBuilder introduced in 1.5V and StringBuffer 1.0V
+StringBuffer is synchronied and StringBuilder is non-synchronized
+StringBuffer slow and StringBuilder is fast
+
+// methods
+append() == to conacte 
+reverse()
+insert()
+replace()
+delete()
+substring()
+
