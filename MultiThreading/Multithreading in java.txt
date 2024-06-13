@@ -1,0 +1,88 @@
+Multithreading in java
+
+Multithreading in Java is a process of executing multiple threads simultaneously.
+
+Thread :
+
+A thread is a lightweight sub-process, the smallest unit of processing. Multiprocessing and multithreading, both are used to achieve multitasking.
+
+Advantages of Multithreading:
+
+1 We can perform multiple oerations at a time
+2 We can perform many operations at a time so we can                       save our time 
+3 Threads are independent so it doesnot affect other threads
+
+Mutitasking :
+types:
+
+process based and thread based multitasking
+
+we can also said that multithreading and multiprocessing
+
+Thread Class in java
+methods :
+
+void start() : it is used to start the execution of the thread
+
+void run() : for action aur task performing
+
+static void sleep() :sleep a thread for specified time
+
+static Thread currentThread() : returns the reference of the current thread
+
+int getPriority()
+getName()
+setName()
+boolean isAlive()
+static void yeild()
+void setPriority()
+ and so on
+
+
+Life cycle of a thread:
+new
+active
+blocked/waiting
+timed waiting
+terminated
+
+package com.practise;
+
+public class DaemonThreadDemo extends Thread {
+	public void run() {
+		System.out.println("this is child Thread");
+	}
+	
+	public static void main(String[] args) {
+		System.out.println("parent thread");
+		DaemonThreadDemo d=new DaemonThreadDemo()
+;
+//		d.setDaemon(false);
+		d.start();
+
+	}
+
+
+
+}
+
+
+package com.practise;
+
+public class GetNameAndSetNameThread extends Thread {
+	 public void run() {
+		 System.out.println(Thread.currentThread().getName());
+		 System.out.println("thread Task1");
+	 }
+	 public void runs() {
+		 System.out.println(Thread.currentThread().getName());
+		 
+	 }
+	public static void main(String[] args) {
+		
+		GetNameAndSetNameThread t1=new GetNameAndSetNameThread();
+	       t1.start();
+	       t1.runs();
+	       System.out.println(Thread.currentThread().getName());
+	}}
+
